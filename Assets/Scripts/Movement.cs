@@ -7,7 +7,6 @@ public class  Movement : MonoBehaviour
     Rigidbody2D body;
 
     float horizontal;
-    float vertical;
 
     public float Speed = 10.0f; //Hastigheten vi rör oss/Timothy
 
@@ -22,11 +21,10 @@ public class  Movement : MonoBehaviour
     void Update()
     {
         horizontal = Input.GetAxisRaw("Horizontal");
-        vertical = Input.GetAxisRaw("Vertical");
     }
 
     private void FixedUpdate()
     {
-        body.velocity = new Vector2(horizontal * Speed, vertical * Speed);
+        body.velocity = new Vector2(horizontal * Speed, 0);
     }
 }
