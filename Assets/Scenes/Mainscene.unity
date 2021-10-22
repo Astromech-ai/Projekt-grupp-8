@@ -479,7 +479,7 @@ GameObject:
   - component: {fileID: 1204183767}
   - component: {fileID: 1204183766}
   m_Layer: 0
-  m_Name: PauseTestThing
+  m_Name: PauseThing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
