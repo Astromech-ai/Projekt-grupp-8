@@ -261,6 +261,8 @@ MonoBehaviour:
   FirePoint: {fileID: 1683931749}
   BulletPrefab: {fileID: 3551224575860367845, guid: d9b991424f3db4540a4e4489ef6b0291,
     type: 3}
+  granatprefab: {fileID: 8088294611038082803, guid: f425e22d48ca51c4d96a4003bfe750ad,
+    type: 3}
 --- !u!68 &453344778
 EdgeCollider2D:
   m_ObjectHideFlags: 0
