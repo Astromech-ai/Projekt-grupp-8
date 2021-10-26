@@ -22,22 +22,22 @@ public class Pause : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape) && isPaused == false) //Pausar spelet när man trycker på escape
         {
-            Time.timeScale = 0;  //Stannar tiden
-            buttons.SetActive(true);  //Visar knapparna
+            Time.timeScale = 0;  //Stannar tiden   
+            buttons.SetActive(true);  //Visar knapparna   
         }
         
     }
 
     public void Continue()
     {
-        Time.timeScale = 1;  //Får tiden att bli normal
-        buttons.SetActive(false);  //Döljer knapparna
+        Time.timeScale = 1;  //Får tiden att bli normal   
+        buttons.SetActive(false);  //Döljer knapparna   
     }
 
     public void Menu()
     {
-        SceneManager.LoadScene(0);  //Byter till menyn
-        Time.timeScale = 1;  //Får tiden att bli normal
+        SceneManager.LoadScene(0);  //Byter till menyn   
+        Time.timeScale = 1;  //Får tiden att bli normal   
     }
 
 }
