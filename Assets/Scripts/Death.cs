@@ -2,18 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class alien : MonoBehaviour
+public class Death : MonoBehaviour
 {
-
- 
-
-
-
-    private void OnTriggerEnter2D (Collider2D col)
+    private void OnTriggerEnter2D(Collider2D col)
     {
-        if(col.gameObject.tag == "bullet")
+        if (col.gameObject.tag == "acid")
         {
-            AlienSpawn.alienCount -=1;
             Destroy(col.gameObject);
             Destroy(gameObject);
         }
