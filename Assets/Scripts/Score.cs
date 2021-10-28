@@ -6,14 +6,13 @@ using UnityEngine.UI;
 public class Score : MonoBehaviour
 {
 
-    public int score;
+    public int score2;
     public Text scoreText;
 
     public int Highscore;
     public Text HighscoreText;
 
-    public bool test;
-
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -23,21 +22,18 @@ public class Score : MonoBehaviour
     // Update is called once per frame   
     void Update()
     {
-        scoreText.text = score + ""; //Ändrar score texten
+        score2 = alien.score;
 
+        scoreText.text = score2 + ""; //Ändrar score texten     
 
-        if(test == true)  //Lägger till 1 i score när man skjuter en alien
+        if(score2 > Highscore)  //Ändrar highscoren
         {
-            score = score + 1;
-        }
-
-        if(score > Highscore)  //Ändrar highscoren
-        {
-            Highscore = score;
+            Highscore = score2;
         }
 
         HighscoreText.text = "Highscore " + Highscore;  //Ändrar highscore texten
 
         PlayerPrefs.SetInt("Highscore", Highscore);  //Sparar highscoren
+
     }
 }

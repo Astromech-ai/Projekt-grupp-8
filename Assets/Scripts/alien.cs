@@ -5,7 +5,7 @@ using UnityEngine;
 public class alien : MonoBehaviour
 {
 
- 
+    public static int score;
 
 
 
@@ -16,6 +16,7 @@ public class alien : MonoBehaviour
             AlienSpawn.alienCount -=1;
             Destroy(col.gameObject);
             Destroy(gameObject);
+            score = score + 1;
         }
     }
 }
