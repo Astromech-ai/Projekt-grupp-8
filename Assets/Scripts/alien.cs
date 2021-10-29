@@ -5,29 +5,7 @@ using UnityEngine;
 public class alien : MonoBehaviour
 {
 
-    public Transform[] position;
-    public Transform location;
-    public GameObject Alien;
-    public int level = 0;
-    public int alienCount = 1;
-
-
-
-
-
-    private void Update()
-    {
-       if(alienCount == 0)
-        {
-            print("test");
-            level += 1;
-        }
-       if(level == 1)
-        {
-
-        }
-    }
-
+    public static int score;
 
 
 
@@ -35,9 +13,10 @@ public class alien : MonoBehaviour
     {
         if(col.gameObject.tag == "bullet")
         {
-            level -=1;
+            AlienSpawn.alienCount -=1;
             Destroy(col.gameObject);
             Destroy(gameObject);
+            score = score + 1;
         }
     }
 }
