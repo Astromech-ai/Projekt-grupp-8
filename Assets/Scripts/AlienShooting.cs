@@ -6,6 +6,7 @@ public class AlienShooting : MonoBehaviour
 
     public Transform FirePoint;
     public GameObject BulletPrefab;
+    public Rigidbody2D rb;
 
     void Start()
     {
