@@ -16,7 +16,7 @@ public class alien : MonoBehaviour
             AlienSpawn.alienCount -=1;
             Destroy(col.gameObject);
             Destroy(gameObject);
-            score = score + 1;
+            score = score + 1; //Ger poäng -Oliver
         }
     }
 }

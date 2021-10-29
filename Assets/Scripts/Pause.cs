@@ -14,30 +14,30 @@ public class Pause : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        buttons.SetActive(false);  //Döljer knapparna
+        buttons.SetActive(false);  //Döljer knapparna  -Oliver
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape) && isPaused == false) //Pausar spelet när man trycker på escape
+        if (Input.GetKeyDown(KeyCode.Escape) && isPaused == false) //Pausar spelet när man trycker på escape  -Oliver
         {
-            Time.timeScale = 0;  //Stannar tiden   
-            buttons.SetActive(true);  //Visar knapparna   
+            Time.timeScale = 0;  //Stannar tiden   -Oliver
+            buttons.SetActive(true);  //Visar knapparna   -Oliver
         }
         
     }
 
     public void Continue()
     {
-        Time.timeScale = 1;  //Får tiden att bli normal   
-        buttons.SetActive(false);  //Döljer knapparna   
+        Time.timeScale = 1;  //Får tiden att bli normal   -Oliver
+        buttons.SetActive(false);  //Döljer knapparna  -Oliver  
     }
 
     public void Menu()
     {
-        SceneManager.LoadScene(0);  //Byter till menyn   
-        Time.timeScale = 1;  //Får tiden att bli normal   
+        SceneManager.LoadScene(0);  //Byter till menyn   -Oliver
+        Time.timeScale = 1;  //Får tiden att bli normal   -Oliver
     }
 
 }

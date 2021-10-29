@@ -8,12 +8,12 @@ public class Buttons : MonoBehaviour
 {
     public void StartGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); //Byter scen till nästa 
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); //Byter scen till nästa -Oliver
     }
 
     public void QuitGame()
     {
-        Application.Quit(); //Stänger ner spelet   
-        print("Working"); //För att se om den fungerar   
+        Application.Quit(); //Stänger ner spelet   -Oliver
+        print("Working"); //För att se om den fungerar   -Oliver
     }
 }

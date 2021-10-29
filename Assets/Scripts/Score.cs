@@ -16,7 +16,7 @@ public class Score : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Highscore = PlayerPrefs.GetInt("Highscore", Highscore);  //Laddar highscoren
+        Highscore = PlayerPrefs.GetInt("Highscore", Highscore);  //Laddar highscoren -Oliver
     }
 
     // Update is called once per frame   
@@ -24,16 +24,16 @@ public class Score : MonoBehaviour
     {
         score2 = alien.score;
 
-        scoreText.text = score2 + ""; //Ändrar score texten     
+        scoreText.text = score2 + ""; //Ändrar score texten   -Oliver
 
-        if(score2 > Highscore)  //Ändrar highscoren
+        if(score2 > Highscore)  //Ändrar highscoren  -Oliver
         {
             Highscore = score2;
         }
 
-        HighscoreText.text = "Highscore " + Highscore;  //Ändrar highscore texten
+        HighscoreText.text = "Highscore " + Highscore;  //Ändrar highscore texten  -Oliver
 
-        PlayerPrefs.SetInt("Highscore", Highscore);  //Sparar highscoren
+        PlayerPrefs.SetInt("Highscore", Highscore);  //Sparar highscoren  -Oliver
 
     }
 }
